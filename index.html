@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header">
@@ -24,56 +25,82 @@
             speciality and it’s taken me all over the world.</p>
         </section>
         <section id="gallery">
-            <h2>Gallery</h2>
-            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-        </section>
-        <section>
-            <img src="images/Chile.png" alt="chile-2001">
-            <p>Chile, 2001</p>
-        </section>
-        <section>
-            <img src="images/Guatemala.png" alt="Guatemala-1997">
-            <p>Guatemala, 1997</p>
-        </section>
-        <section>
-            <img src="images/Hawaii.png" alt="Hawaii-2010">
-            <p>Hawaii, 2010</p>
-        </section>
-        <section>
-            <img src="images/Iran.png" alt="Iran-1999">
-            <p>Iran, 1999</p>
-        </section><section>
-            <img src="images/Ireland.png" alt="Ireland-2012">
-            <p>Ireland, 2012</p>
-        </section>
-        <section>
-            <img src="images/Italy.png" alt="Italy-2015">
-            <p>Italy, 2015</p>
-        </section>
-        <section>
-            <img src="images/Moab-Desert.png" alt="Moab Desert-2020">
-            <p>Moab Desert, 2020</p>
-        </section>
-        <section>
-            <img src="images/Rocky-Mountains.png" alt="Rocky Mountains-2009">
-            <p>Rocky Mountains, 2009</p>
-        </section>
-        <section>
-            <img src="images/Switzerland.png" alt="Switzerland-2014">
-            <p>Switzerland, 2014</p>
-        </section>
-        <section>
-            <img src="images/UK.png" alt="UK-2005">
-            <p>UK, 2005</p>
-        </section>
-        <section>
-            <img src="images/USA.png" alt="USA-2021">
-            <p>USA, 2021</p>
-        </section>
-        <section>
-            <img src="images/Wyoming.png" alt="Wyoming-2021">
-            <p>Wyoming, 2021</p>
+            <section id="gallery-text">
+                <h2>Gallery</h2>
+                <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            </section>
+            <figure>
+                <img src="images/Chile.png" alt="chile-2001">
+                <figcaption>Chile, 2001</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Guatemala.png" alt="Guatemala-1997">
+                <figcaption>Guatemala, 1997</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Guatemala.png" alt="Guatemala-1997">
+                <figcaption>Guatemala, 1997</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Hawaii.png" alt="Hawaii-2010">
+                <figcaption>Hawaii, 2010</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Iran.png" alt="Iran-1999">
+                <figcaption>Iran, 1999</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ireland.png" alt="Ireland-2012">
+                <figcaption>Ireland, 2012</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Italy.png" alt="Italy-2015">
+                <figcaption>Italy, 2015</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Moab-Desert.png" alt="Moab Desert-2020">
+                <figcaption>Moab Desert, 2020</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rocky-Mountains.png" alt="Rocky Mountains-2009">
+                <figcaption>Rocky Mountains, 2009</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Switzerland.png" alt="Switzerland-2014">
+                <figcaption>Switzerland, 2014</figcaption>
+            </figure>
+            <figure>
+                <img src="images/UK.png" alt="UK-2005">
+                <figcaption>UK, 2005</figcaption>
+            </figure>
+            <figure>
+                <img src="images/USA.png" alt="USA-2021">
+                <figcaption>USA, 2021</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Wyoming.png" alt="Wyoming-2021">
+                <figcaption> Wyoming, 2021</figcaption>
+            </figure>
+        </section> 
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Full Name"><br><br>
+            
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Address"><br><br>
+            
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="1" cols="80" placeholder="What Can I Help You With?"></textarea><br><br>
+            
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
+    <footer id="footer">
+        <p>Copyright 2021 TK Photography</p>
+    </footer>
 </body>
 </html>
