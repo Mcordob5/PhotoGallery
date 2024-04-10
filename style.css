@@ -84,10 +84,11 @@ main {
     color: #ffffff;
     padding-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-#contact h2,p{
-    text-align: center;
+#contact label{
+    text-align: left;
 }
 
 #contact input[type="text"],
