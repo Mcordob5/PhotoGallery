@@ -31,19 +31,27 @@ header{
 
 header h1{
     color:#007d7b ;
+    text-align: center;
+    padding: 5px;
 }
 
 nav{
     background-color: black;
     color: #ffffff;
+    text-align: center;
 }
 
 nav ul{
-    display: inline;
+    padding: 20px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
 }
 
 nav ul li{
-    display: inline-block;
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav a{
@@ -52,18 +60,69 @@ nav a{
     text-decoration: none;
 }
 
+#top-link{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #ffffff;
+    border: #ffffff 3px solid;
+    padding: 5px;
+    z-index: 1;
+}
+
 main {
     background-color: #ffffff;
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
 }
 
 #contact{
     background-color: black;
     color: #ffffff;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+#contact h2,p{
+    text-align: center;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#contact ::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+}
+
+#contact input[type="textarea"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#submit{
+    border-radius: 25px;
+    padding: 10px;
+    width: 250px;
+    background-color: #007d7b;
+    color: #ffffff;
+    border: #007d7b;
+    margin: 0 auto;
 }
 
 footer {
     color: #ffffff;
     text-align: center;
+    padding: 40px;
 }
 
 @media screen and (min-width: 880px) {
