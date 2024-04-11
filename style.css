@@ -1,8 +1,13 @@
 html{
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
     width: 485px;
     margin: 0 auto;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 h1{
@@ -16,6 +21,7 @@ h2{
 
 p{
     font-size: 1.25em;
+    padding-left: 10px;
 }
 
 figcaption, label, input, small {
@@ -71,12 +77,86 @@ nav a{
 }
 
 main {
+    padding-top: 5px;
     background-color: #ffffff;
 }
 
-#gallery{
+/* #gallery-images {
     display: flex;
     flex-direction: column;
+    align-items: center;
+} */
+
+#gallery-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    width: 475px;
+    padding: 0;
+    justify-items: center;
+}
+
+figure {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* #gallery-images img {
+    max-width: 100%;
+} */
+
+figcaption {
+    position: relative;
+    top: -40px;
+}
+
+#chile, #hawaii, #italy, #moab figcaption {
+    
+    color:#ffffff
+}
+
+#italy figcaption{
+    color: black;
+}
+
+#guatemala figcaption {
+    top: -250px;
+    color:#ffffff
+}
+
+#wy figcaption {
+    top: -250px;
+    color: #ffffff;
+}
+
+#iran figcaption {
+    top: -600px;
+    color: black;
+}
+
+#ireland figcaption {
+    top: -600px;
+    color: black;
+}
+
+#rocky figcaption {
+    top: -250px;
+    color: black;
+}
+
+#swiss figcaption {
+    top: -250px;
+    color: black;
+}
+
+#uk figcaption {
+    top: -250px;
+    color: black;
+}
+
+#usa figcaption {
+    top: -250px;
+    color: black;
 }
 
 #contact{
@@ -88,7 +168,9 @@ main {
 }
 
 #contact label{
-    text-align: left;
+    display: block;
+    text-align: start;
+    padding-left: 20px;
 }
 
 #contact input[type="text"],
@@ -124,18 +206,36 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 40px;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 880px) {
     html{
         width: 880px;
     }
-}
+
+    body{
+        margin: 0;
+    }
+    #gallery-images {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        gap: 5px;
+        width: auto;
+    }
+}  
     
 
 @media screen and (min-width: 1300px) {
     html {
-        display: flex;
         width: 1300px;
+    }
+    nav{
+        text-align: right;
+    }
+    #gallery-images {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 5px;
+        width: auto;
     }
 }
